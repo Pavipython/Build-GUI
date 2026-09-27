@@ -39,4 +39,18 @@ editmenu.add_command(label="find file",command=None)
 editmenu.add_separator()
 editmenu.add_command(label="check folder",command=None)
 
+extensions=Menu(menubar,tearoff=0)
+menubar.add_cascade(label="extension",menu=extensions)
+extensions.add_command(label="add extension",command=None)
+extensions.add_command(label="delete extension",command=None)
+extensions.add_command(label="manage apps",command=None)
+extensions.add_command(label="share link",command=None)
+
+
+
+
+
+
+
+
 window.mainloop()

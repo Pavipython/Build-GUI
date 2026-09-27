@@ -29,5 +29,6 @@ Email.place(x=30,y=430)
 EmailEntry = Entry(window,font=("Arial",20))
 EmailEntry.place(x=150,y=430)
 # display Email
+
 window.mainloop()
 # update window to stay on screen
