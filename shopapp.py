@@ -1,0 +1,32 @@
+from tkinter import *
+window=Tk()
+window.geometry("500x900")
+window.config(background="light blue")
+window.title("Spinbox")
+
+heading=Label(window,text="fruit shopping app",font=("Comic sans",20,"bold"))
+heading.place(x=150,y=0)
+
+instruction=Label(window,text="This is a fruit shopping app",font=("Comic sans",20,"bold"))
+instruction.place(x=90,y=100)
+instruction2=Label(window,text="choose, buy and check how many fruit you want",font=("Comic sans",12,"bold"))
+instruction2.place(x=90,y=150)
+
+fruits=Label(window,text="fruits",font=("Comic sans",15))
+fruits.place(x=80,y=220)
+sb1=Spinbox(window,values=("mango","kiwi","apple","pear","banana","tomato","watermelon","cherry"),font=("Comic sans",15))
+sb1.place(x=80,y=250)
+
+quantity=Label(window,text="select quantity",font=("Comic sans",15))
+quantity.place(x=80,y=300)
+sb2=Spinbox(window,from_=0,to=10,font=("Comic sans",15))
+sb2.place(x=80,y=330)
+
+total=Button(window,text="submit",font=("Calibre",20))
+total.place(x=150,y=400)
+
+totalprice=Label(window,text="total price: ",font=("Calibre",20))
+totalprice.place(x=80,y=490)
+
+window.mainloop()
+
